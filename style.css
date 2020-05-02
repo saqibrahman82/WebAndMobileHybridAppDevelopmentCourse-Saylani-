@@ -1,0 +1,50 @@
+body{
+    background-color: lightgray;
+}
+
+h1{
+    text-align: center;
+    color: tan;
+    background-color: navy;
+    height: 1.3em;
+}
+
+address{
+    text-align: center;
+}
+
+.logoImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    height: auto;
+}
+
+table{
+    /* padding: 2px; */
+    background-color: tan;
+    color: navy;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse:collapse;
+    box-sizing: border-box;
+    border-spacing: 0;
+ }
+
+th td.center{
+    text-align: center;
+}
+
+table td, th{
+    vertical-align: middle;
+    border: 1px solid navy;
+}
+
+th{
+    background-color: navy;
+    color: tan;
+    font-weight: bolder;
+}

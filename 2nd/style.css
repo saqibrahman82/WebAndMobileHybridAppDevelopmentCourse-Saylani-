@@ -1,0 +1,88 @@
+h1{
+    text-align: center;
+    color: rgb(107, 90, 205);
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+h2{
+    text-align: center;
+    color: rgb(107, 90, 205);
+}
+
+.backToIndexLink{    
+    display: block;
+    width: 130px;
+    margin: auto;
+    font-size: xx-large;
+    color: rgb(107, 90, 205);
+}
+
+address{
+    text-align: center;
+}
+
+.centerImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: auto;
+  }
+
+  .centerImgRD {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%;
+      height: auto;
+    }
+
+  table{
+      padding: 10px;
+      background-color: rgb(107, 90, 205);
+      color: white;
+      width: 80%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  td.label{      
+    text-transform: uppercase;
+    width: 20%;
+  }
+
+  th.Serial{
+      width: 3%;
+  }
+
+  th.Exame{
+      width: 7%;
+  }
+
+  th.Rest{
+      width: 30%;
+  }
+
+  td.center{
+      text-align: center;
+  }
+
+  table td, th{
+      vertical-align: top;
+  }
+
+  .subTable{
+      padding: 0px;
+      margin-left: 0px;
+      margin-right: 0px;
+  }
+
+  .fixedWidthInput{
+      padding:8px;
+      /* display:block;
+      border:none; */
+      /* border-bottom:1px solid #ccc; */
+      width:16em;
+    }

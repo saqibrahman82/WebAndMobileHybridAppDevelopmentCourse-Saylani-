@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="images/logo.jpg" alt="Saylani Logo" class="centerImg">
+    <h1>Student Registration Form</h1>
+    <br />
+    <form action="Redirect.html" method="post">
+        <table>
+            <tr>
+                <td class="label">First Name</td>
+                <td><input class="fixedWidthInput" type="text" id="first_name" name="first_name" pattern="[A-Za-z]+"
+                        maxlength="30" />(max 30
+                    characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td class="label">Last Name</td>
+                <td><input class="fixedWidthInput" type="text" id="last_name" name="last_name" pattern="[A-Za-z]+"
+                        maxlength="30" />(max 30
+                    characters a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td class="label">Date of Birth</td>
+                <td><input class="fixedWidthInput" type="date" id="dob" name="dob"></td>
+            </tr>
+            <tr>
+                <td class="label">Email Id</td>
+                <td><input class="fixedWidthInput" type="email" name="email" /></td>
+            </tr>
+            <tr>
+                <td class="label">Mobile Number</td>
+                <td><input class="fixedWidthInput" type="text" id="mobile_num" name="mobile_num"
+                        pattern="[0-9]{10}" />(10 digit
+                    number)</td>
+            </tr>
+            <tr>
+                <td class="label">Gender</td>
+                <td>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male" value="M" />
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female" value="F" />
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Address</td>
+                <td><textarea name="address" cols="70" rows="4"></textarea></td>
+            </tr>
+            <tr>
+                <td class="label">City</td>
+                <td><input class="fixedWidthInput" type="text" id="city" name="city" pattern="[A-Za-z]+"
+                        maxlength="30" />(max 30 characters a-z
+                    and A-Z)</td>
+            </tr>
+            <tr>
+                <td class="label">Pin Code</td>
+                <td><input class="fixedWidthInput" type="text" id="pin_code" name="pin_code" pattern="[0-9]{6}" />(6
+                    digit number)</td>
+            </tr>
+            <tr>
+                <td class="label">State</td>
+                <td><input class="fixedWidthInput" type="text" id="state" name="state" pattern="[A-Za-z]+"
+                        maxlength="30" />(max 30 characters
+                    a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td class="label">Country</td>
+                <td><input class="fixedWidthInput" type="text" id="country" name="country" pattern="[A-Za-z]+"
+                        maxlength="30" />(max 30 characters
+                    a-z and A-Z)</td>
+            </tr>
+            <tr>
+                <td class="label">Hobbies</td>
+                <td>
+                    <label for="drawing">Drawing</label>
+                    <input type="checkbox" name="hobbies" value="drawing" id="drawing" />
+                    <label for="singing">Singing</label>
+                    <input type="checkbox" name="hobbies" value="singing" id="singing" />
+                    <label for="dancing">Dancing</label>
+                    <input type="checkbox" name="hobbies" value="dancing" id="dancing" />
+                    <label for="sketching">Sketching</label>
+                    <input type="checkbox" name="hobbies" value="sketching" id="sketching" />
+                    <Br />
+                    <label for="others">Others</label>
+                    <input type="checkbox" name="hobbies" value="others" id="others" />
+                    <input class="fixedWidthInput" type="text" name="otherText">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Qualification</td>
+                <td>
+                    <table class="subTable">
+                        <tr>
+                            <th class="Serial">S.No.</th>
+                            <th class="Exame">Examination</th>
+                            <th class="Rest">Board</th>
+                            <th class="Rest">Percentage</th>
+                            <th class="Rest">Year of Passing</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Class X</td>
+                            <td class="center"><input class="fixedWidthInput" type="text" id="board1" name="board1"
+                                    pattern="[A-Za-z]+" maxlength="10" size="35" /></td>
+                            <td class="center"><input class="fixedWidthInput" type="number" id="percentage1"
+                                name="percentage1" min="0" max="100" step="0.01" /></td>
+                            <td class="center"><input class="fixedWidthInput" type="number" id="year1" name="year1"
+                                    min="1947" max="2020" step="1" /></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td class="center"><input class="fixedWidthInput" type="text" id="board2" name="board2"
+                                    pattern="[A-Za-z]+" maxlength="10" size="35" /></td>
+                            <td class="center"><input class="fixedWidthInput" type="number" id="percentage2"
+                                name="percentage2" min="0" max="100" step="0.01" /></td>
+                            <td class="center"><input class="fixedWidthInput" type="number" id="year2" name="year2"
+                                    min="1947" max="2020" step="1" /></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td class="center"><input class="fixedWidthInput" type="text" id="board3" name="board3"
+                                    pattern="[A-Za-z]+" maxlength="10" size="35" /></td>
+                            <td class="center"><input class="fixedWidthInput" type="number" id="percentage3"
+                                name="percentage3" min="0" max="100" step="0.01" /></td>
+                            <td class="center"><input class="fixedWidthInput" type="number" id="year3" name="year3"
+                                    min="1947" max="2020" step="1" /></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td class="center"><input class="fixedWidthInput" type="text" id="board4" name="board4"
+                                    pattern="[A-Za-z]+" maxlength="10" size="35" /></td>
+                            <td class="center"><input class="fixedWidthInput" type="number" id="percentage4"
+                                    name="percentage4" min="0" max="100" step="0.01" /></td>
+                            <td class="center"><input class="fixedWidthInput" type="number" id="year4" name="year4"
+                                    min="1947" max="2020" step="1" /></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="center">(10 char max)</td>
+                            <td class="center">(upto 2 decimal )</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">Cources Applied For</td>
+                <td>
+                    <label for="c1">BCA</label>
+                    <input type="radio" name="course" id="c1" value="c1" />
+                    <label for="c2">B.Com</label>
+                    <input type="radio" name="course" id="c2" value="c2" />
+                    <label for="c3">B. Sc</label>
+                    <input type="radio" name="course" id="c3" value="c3" />
+                    <label for="c4">B.A</label>
+                    <input type="radio" name="course" id="c4" value="c4" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="center">
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+        <address>
+            <p><strong>Roll No:</strong> WM10200</p>
+            <p><Strong>Name :</Strong> SAQIB RAHMAN</p>
+            <p><Strong>Email :</Strong> <a href="mailto:saqib.rahman82@gmail.com">saqib.rahman82@gmail.com</a></p>
+        </address>
+    </form>
+</body>
+
+</html>
